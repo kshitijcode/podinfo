@@ -9,4 +9,4 @@ resources:
 configMapGenerator:
 - name: configmap-gen
   files:
-  - test.properties
+  - test
