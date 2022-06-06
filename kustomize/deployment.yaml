@@ -4,7 +4,7 @@ metadata:
   name: podinfo
   annotations:
         reloader.stakater.com/auto: "true"
-        configmap.reloader.stakater.com/reload: "flux-configmap"
+        configmap.reloader.stakater.com/reload: "podinfo-configmap"
 spec:
   minReadySeconds: 3
   revisionHistoryLimit: 5
