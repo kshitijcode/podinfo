@@ -7,6 +7,6 @@ resources:
   - configmap.yml
 
 configMapGenerator:
-- name: example-configmap-base
+- name: configmap-gen
   files:
-  - game.properties
+  - test.properties
