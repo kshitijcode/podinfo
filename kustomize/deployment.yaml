@@ -29,6 +29,12 @@ spec:
         envFrom:
           - configMapRef:
               name: podinfo-configmap
+        env:
+          - name: MYBASEVAR
+            valueFrom:
+              configMapKeyRef:
+                name: example-configmap-base
+                key: base.properties
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
