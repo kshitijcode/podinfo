@@ -7,3 +7,4 @@ data:
   database: mongodb
   database_uri: mongodb://localhost:27017
   rent: yes
+  arrow: ready
