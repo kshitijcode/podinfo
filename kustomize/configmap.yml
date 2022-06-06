@@ -7,4 +7,4 @@ data:
   database: mongodb
   database_uri: mongodb://localhost:27017
   app: ready
-  working: true
+  working: "true"
