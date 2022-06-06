@@ -6,3 +6,7 @@ resources:
   - service.yaml
   - configmap.yml
 
+configMapGenerator:
+- name: example-configmap-base
+  files:
+  - game.properties
