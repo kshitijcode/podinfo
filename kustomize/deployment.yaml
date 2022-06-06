@@ -26,6 +26,9 @@ spec:
       containers:
       - name: podinfod
         image: ghcr.io/stefanprodan/podinfo:6.1.6
+        envFrom:
+          - configMapRef:
+              name: podinfo-configmap
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
@@ -46,9 +49,6 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
-      envFrom:
-        - configMapRef:
-            name: podinfo-configmap
         livenessProbe:
           exec:
             command:
