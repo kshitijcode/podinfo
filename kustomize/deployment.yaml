@@ -51,7 +51,7 @@ spec:
           - name: GORUSH_STAT_ENGINE
             valueFrom:
               configMapKeyRef:
-                name: flux-configmap
+                name: podinfo-configmap
                 key: database
         livenessProbe:
           exec:
