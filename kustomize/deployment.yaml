@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: podinfo
   annotations:
-        reloader.stakater.com/auto: "true"
         configmap.reloader.stakater.com/reload: "podinfo-configmap"
 spec:
   minReadySeconds: 3
@@ -47,12 +46,9 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
-        env:
-          - name: GORUSH_STAT_ENGINE
-            valueFrom:
-              configMapKeyRef:
-                name: podinfo-configmap
-                key: database
+       envFrom:
+        - configMapRef:
+            name: podinfo-configmap
         livenessProbe:
           exec:
             command:
