@@ -46,9 +46,12 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
-        envFrom:
-            - configMapRef:
+        env:
+          - name: GORUSH_STAT_ENGINE
+            valueFrom:
+              configMapKeyRef:
                 name: flux-configmap
+                key: database
         livenessProbe:
           exec:
             command:
