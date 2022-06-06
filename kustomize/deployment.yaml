@@ -30,7 +30,7 @@ spec:
           - configMapRef:
               name: podinfo-configmap
           - configMapRef:
-              name: example-configmap-base
+              name: configmap-gen
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
