@@ -20,7 +20,6 @@ spec:
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "9797"
-        reloader.stakater.com/auto: "true"
       labels:
         app: podinfo
     spec:
@@ -47,9 +46,6 @@ spec:
         - --level=info
         - --random-delay=false
         - --random-error=false
-        env:
-        - name: PODINFO_UI_COLOR
-          value: "#34577c"
         envFrom:
             - configMapRef:
                 name: flux-configmap
