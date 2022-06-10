@@ -1,0 +1,10 @@
+bases:
+ - ../../base
+
+namesuffix: -camera1
+
+configMapGenerator:
+- name: configmap
+  namespace: default
+  files:
+  - test
