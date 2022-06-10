@@ -1,9 +1,0 @@
-bases:
- - ../base
-
-namesuffix: -camera1
-
-configMapGenerator:
-- name: configmap
-  files:
-  - test
