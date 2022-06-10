@@ -7,6 +7,3 @@ configMapGenerator:
 - name: configmap
   files:
   - test
-
-# patchesStrategicMerge:
-#  - deploy.yaml

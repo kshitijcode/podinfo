@@ -1,9 +1,9 @@
 bases:
  - ../base
 
-namesuffix: -camera1
+namesuffix: -camera2
 
 configMapGenerator:
-- name: configmap-camera2
+- name: configmap
   files:
   - test1
