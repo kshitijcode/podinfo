@@ -1,4 +1,4 @@
 resources:
-- gotk-components.yaml
+- controller.yaml
 - source.yaml
 - cv-app-kustomization.yaml
